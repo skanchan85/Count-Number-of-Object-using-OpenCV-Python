@@ -67,7 +67,8 @@ Count-Number-of-Object-using-OpenCV-Python/
 ## Author
 
 **Kanchan Salunkhe** <br>
-Entry-level Software Developer | Pune, Maharashtra
+Entry-level Software Developer | Pune, Maharashtra <br>
+[Linkedin](https://www.linkedin.com/in/kanchan85)
 
 ## 📄 License
 
