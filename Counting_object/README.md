@@ -133,7 +133,33 @@ We welcome contributions to improve this project! To contribute:
 
 ---
 
-## Contact
-For questions or support, please reach out:  
-- **Email**: nikzmishra@gmail.com  
-- **YouTube**: [NeuralArc00](https://www.youtube.com/@NeuralArc00/videos)  
+##  Project Structure
+
+```
+Count-Number-of-Object-using-OpenCV-Python/
+│-- object_counter.py
+│-- Countin_object/
+    │--static/ index.html
+    │--.....
+│--front.html
+│--yolov8s.pt
+│-- README.md
+```
+
+##  Future Improvements
+
+- Real-time object counting via webcam feed
+- Support for counting specific object types using ML-based classification
+- Web-based interface for uploading and processing images
+- Export count results to CSV/report
+
+## Author
+
+**Kanchan Salunkhe** <br>
+Entry-level Software Developer | Pune, Maharashtra <br>
+[Linkedin](https://www.linkedin.com/in/kanchan85)
+
+## 📄 License
+
+This project is open source and available for learning/demo purposes.
+
