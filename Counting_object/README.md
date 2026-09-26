@@ -1,9 +1,5 @@
 # Object Tracking & Counting with YOLOv8
 
-## Watch the Video 📺
-
-[![YouTube Video](https://img.shields.io/badge/YouTube-Watch%20Video-red?logo=youtube&logoColor=white&style=for-the-badge)](https://youtu.be/YyidGtx-QmQ)
-
 ## Overview
 This project demonstrates real-time **Object detection, tracking, and counting** using **YOLOv8**, **Supervision**, and **OpenCV**. The goal is to track Object movement across a defined line in a video and count how many people enter and exit. This approach is useful for applications like **crowd analysis, surveillance, and retail analytics**.
 
@@ -35,12 +31,12 @@ Tracking and counting Object in video streams is a crucial task in computer visi
 
 ---
 
-## Video Source
-### Input
-- The project works with any Object activity video.  
-- Example videos included in repo: `mall_counting.mp4`, `highway_car.mp4`, `highway_car2.mp4`
-
-You can replace it with your own video by updating the `VIDEO_PATH` variable in the code.
+## Features
+- **Real-Time Detection**: Using YOLOv8 for accurate person detection.
+- **Line-Based Counting**: Entry/Exit count tracking with Supervision.
+- **Bounding Box Annotation**: Visualize detections with bounding boxes.
+- **Customizable**: Works with any video source.
+- **Lightweight & Fast**: Runs efficiently on CPU/GPU.
 
 ---
 
@@ -50,6 +46,28 @@ You can replace it with your own video by updating the `VIDEO_PATH` variable in 
 - **Supervision**: Line zone tracking & annotation.
 - **OpenCV**: Video processing & visualization.
 - **NumPy**: Numerical operations.
+
+---
+
+##  Project Structure
+
+```
+Count-Number-of-Object-using-OpenCV-Python/
+│-- object_counter.py
+│-- Countin_object/
+    │--static/ index.html
+    │--.....
+│--front.html
+│--yolov8s.pt
+│-- README.md
+
+```
+## Video Source
+### Input
+- The project works with any Object activity video.  
+- Example videos included in repo: `mall_counting.mp4`, `highway_car.mp4`, `highway_car2.mp4`
+
+You can replace it with your own video by updating the `VIDEO_PATH` variable in the code.
 
 ---
 
@@ -96,13 +114,6 @@ Press **ESC** to exit the video window.
 📷 Preview of Running project
 
 <img width="1434" height="829" alt="Image" src="https://github.com/user-attachments/assets/66edfb76-afbe-4fdd-8c08-3a7c62a55757" />---
-
-## Features
-- **Real-Time Detection**: Using YOLOv8 for accurate person detection.
-- **Line-Based Counting**: Entry/Exit count tracking with Supervision.
-- **Bounding Box Annotation**: Visualize detections with bounding boxes.
-- **Customizable**: Works with any video source.
-- **Lightweight & Fast**: Runs efficiently on CPU/GPU.
 
 ---
 
