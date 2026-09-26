@@ -1,48 +1,51 @@
-# Count-Number-of-Object-using-OpenCV-Python
-
-A Python-based computer vision application that detects and counts objects in images/video using OpenCV.
+# Count Number of Object using OpenCV-Python
 
 ## Overview
+This project demonstrates real-time **Object detection, tracking, and counting** using **YOLOv8**, **Supervision**, and **OpenCV**. The goal is to track Object movement across a defined line in a video and count how many people enter and exit. This approach is useful for applications like **crowd analysis, surveillance, and retail analytics**.
 
-Manually counting objects in images or video feeds is time-consuming and error-prone. This project uses image processing techniques with OpenCV to automatically detect and count objects, making it useful for inventory checks, quality control, and similar real-world tasks.
+---
 
-##  Features
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Video Source](#video-source)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Features](#features)
+7. [Results](#results)
+8. [Contributing](#contributing)
+9. [License](#license)
 
--  **Object Detection** – Identifies distinct objects within an image/frame
--  **Automatic Counting** – Returns the total count of detected objects
--  **Image Processing Pipeline** – Uses techniques like grayscale conversion, thresholding, and contour detection
--  **Visual Output** – Displays the processed image with detected objects highlighted/labeled
+---
 
-## Tech Stack
+## Introduction
+Tracking and counting Object in video streams is a crucial task in computer vision. This project leverages **YOLOv8 for object detection** and the **Supervision library** for line-based counting to build a robust, real-time tracking and counting pipeline.
 
-- **Language:** Python
-- **Library:** OpenCV
-- **Concepts Used:** Image Processing, Contour Detection, Thresholding
+### Objectives
+- Detect and track Object in videos using YOLOv8.
+- Count the number of Object crossing a predefined line.
+- Annotate bounding boxes and counts in real-time.
+- Provide a reusable framework for similar surveillance or analytics tasks.
 
-##  Getting Started
+---
 
-### Prerequisites
-- Python 3.x installed
-- OpenCV library
+## Features
+- **Real-Time Detection**: Using YOLOv8 for accurate person detection.
+- **Line-Based Counting**: Entry/Exit count tracking with Supervision.
+- **Bounding Box Annotation**: Visualize detections with bounding boxes.
+- **Customizable**: Works with any video source.
+- **Lightweight & Fast**: Runs efficiently on CPU/GPU.
 
-### Installation & Running
+---
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/your-username/object-counting-opencv.git
-   ```
-2. Navigate to the project directory
-   ```bash
-   cd object-counting-opencv
-   ```
-3. Install dependencies
-   ```bash
-   pip install opencv-python numpy
-   ```
-4. Run the script
-   ```bash
-   python object_counter.py
-   ```
+## Technologies Used
+- **Python**: Core programming language.
+- **YOLOv8 (Ultralytics)**: Object detection.
+- **Supervision**: Line zone tracking & annotation.
+- **OpenCV**: Video processing & visualization.
+- **NumPy**: Numerical operations.
+
+---
 
 ##  Project Structure
 
@@ -55,7 +58,73 @@ Count-Number-of-Object-using-OpenCV-Python/
 │--front.html
 │--yolov8s.pt
 │-- README.md
+
 ```
+## Video Source
+### Input
+- The project works with any Object activity video.  
+- Example videos included in repo: `mall_counting.mp4`, `highway_car.mp4`, `highway_car2.mp4`
+
+You can replace it with your own video by updating the `VIDEO_PATH` variable in the code.
+
+---
+
+## Installation
+### Prerequisites
+Ensure Python (>= 3.8) is installed on your system.
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/object-counting-opencv.git
+   cd object-counting-opencv
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install opencv-python numpy
+   pip install -r requirements.txt
+   ```
+4. Place your input video (e.g., `mall_counting.mp4`) in the project directory if not already available.
+
+---
+
+## Usage
+Run the following command:
+```bash
+python app.py
+```
+or try other scripts (`app2.py`, `app3.py`) depending on your experiment.
+
+The script will:
+- Load YOLOv8 model (e.g., `yolov8s.pt` or `yolov8m.pt`).
+- Detect Object in each frame.
+- Track and count people crossing a virtual line.
+- Display real-time annotated output.
+
+Press **ESC** to exit the video window.
+
+---
+
+📷 Preview of Running project
+
+<img width="1434" height="829" alt="Image" src="https://github.com/user-attachments/assets/66edfb76-afbe-4fdd-8c08-3a7c62a55757" />---
+
+---
+
+## Results
+- **Accurate Tracking**: Object crossing the line are counted in both directions.
+- **In/Out Metrics**: Displayed directly on the video feed.
+- **Applications**:
+  - Crowd Management  
+  - Retail Store Analytics  
+  - Surveillance Systems  
+
+---
 
 ##  Future Improvements
 
@@ -64,12 +133,24 @@ Count-Number-of-Object-using-OpenCV-Python/
 - Web-based interface for uploading and processing images
 - Export count results to CSV/report
 
+---
+
+## Acknowledgements
+- Thanks to **Ultralytics** for YOLOv8.  
+- **Supervision library** for line-based tracking.  
+- Open-source community projects that inspired this implementation.
+
+---
+
 ## Author
 
 **Kanchan Salunkhe** <br>
 Entry-level Software Developer | Pune, Maharashtra <br>
 [Linkedin](https://www.linkedin.com/in/kanchan85)
 
+---
+
 ## 📄 License
 
 This project is open source and available for learning/demo purposes.
+
