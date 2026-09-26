@@ -1,4 +1,4 @@
-# Object Tracking & Counting using OpenCV-Python
+# Count Number of Object using OpenCV-Python
 
 ## Overview
 This project demonstrates real-time **Object detection, tracking, and counting** using **YOLOv8**, **Supervision**, and **OpenCV**. The goal is to track Object movement across a defined line in a video and count how many people enter and exit. This approach is useful for applications like **crowd analysis, surveillance, and retail analytics**.
