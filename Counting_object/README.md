@@ -1,11 +1,9 @@
-# Object Tracking & Counting with YOLOv8
+# Object Tracking & Counting using OpenCV-Python
 
 ## Overview
 This project demonstrates real-time **Object detection, tracking, and counting** using **YOLOv8**, **Supervision**, and **OpenCV**. The goal is to track Object movement across a defined line in a video and count how many people enter and exit. This approach is useful for applications like **crowd analysis, surveillance, and retail analytics**.
 
 ---
-
-<img width="1845" height="811" alt="Image" src="https://github.com/user-attachments/assets/81afde11-d5bf-4a10-92fa-5d40f6313295" />
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -78,8 +76,8 @@ Ensure Python (>= 3.8) is installed on your system.
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/DataScientist00/Credit-Card-Fraud-Detection-Project.git
-   cd Credit-Card-Fraud-Detection-Project
+   git clone https://github.com/your-username/object-counting-opencv.git
+   cd object-counting-opencv
    ```
 2. Create and activate a virtual environment:
    ```bash
@@ -88,6 +86,7 @@ Ensure Python (>= 3.8) is installed on your system.
    ```
 3. Install dependencies:
    ```bash
+   pip install opencv-python numpy
    pip install -r requirements.txt
    ```
 4. Place your input video (e.g., `mall_counting.mp4`) in the project directory if not already available.
@@ -127,13 +126,12 @@ Press **ESC** to exit the video window.
 
 ---
 
-## Contributing
-We welcome contributions to improve this project! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes and commit (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature/your-feature-name`).
-5. Create a pull request.
+##  Future Improvements
+
+- Real-time object counting via webcam feed
+- Support for counting specific object types using ML-based classification
+- Web-based interface for uploading and processing images
+- Export count results to CSV/report
 
 ---
 
@@ -144,31 +142,13 @@ We welcome contributions to improve this project! To contribute:
 
 ---
 
-##  Project Structure
-
-```
-Count-Number-of-Object-using-OpenCV-Python/
-│-- object_counter.py
-│-- Countin_object/
-    │--static/ index.html
-    │--.....
-│--front.html
-│--yolov8s.pt
-│-- README.md
-```
-
-##  Future Improvements
-
-- Real-time object counting via webcam feed
-- Support for counting specific object types using ML-based classification
-- Web-based interface for uploading and processing images
-- Export count results to CSV/report
-
 ## Author
 
 **Kanchan Salunkhe** <br>
 Entry-level Software Developer | Pune, Maharashtra <br>
 [Linkedin](https://www.linkedin.com/in/kanchan85)
+
+---
 
 ## 📄 License
 
